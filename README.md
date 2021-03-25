@@ -13,3 +13,4 @@ Next execute the script and type the name of a NCS song, for example Invicible
 ```
 ./ncs invincible
 ```
+Because so many NCS songs have duplicate names you might not be able to download certain songs through this script.
