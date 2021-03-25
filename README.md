@@ -1,5 +1,9 @@
 # NCSDownloader
 A simple bash script that can download songs from NCS's Website
+
+## Prerequisites
+[Pup](https://github.com/ericchiang/pup)
+
 ## How to use NCSDownloader
 Download this repo
 ```
