@@ -1,6 +1,10 @@
 #!/bin/bash
-url="$(curl https://ncs.io/$1 | pup 'div[data-url] attr{data-url}' > tempfile)"
-extention=".$(cat tempfile | grep -Eo -- 'mp3|flac|wav|webm')"
-downurl="$(cat tempfile)"
-echo"$(wget "$downurl" -O $1$extention)"
-echo="$(rm -rf tempfile)"
+for i
+do
+    echo $i
+    url="$(curl https://ncs.io/$i | pup 'div[data-url] attr{data-url}' > tempfile)"
+    extention=".$(cat tempfile | grep -Eo -- 'mp3|flac|wav|webm')"
+    downurl="$(cat tempfile)"
+    echo"$(wget "$downurl" -O $i$extention)"
+    echo="$(rm -rf tempfile)"
+done
