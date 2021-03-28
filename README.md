@@ -17,4 +17,21 @@ Next execute the script and type the name of a NCS song, for example Invicible
 ```
 ./ncs invincible
 ```
+
+You can also download multiple songs at the same time, just separate them with a space
+```
+./ncs invincible withoutyou
+```
+
+## Installation
+You can use this script from any directory by moving it to /usr/local/bin
+```
+mv ncs /usr/local/bin
+```
+Then make it executable
+```
+chmod 777 /usr/local/bin/ncs
+```
+Both commands must be run as root
+
 Because so many NCS songs have duplicate names you might not be able to download certain songs through this script.
